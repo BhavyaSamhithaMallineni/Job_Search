@@ -1,0 +1,54 @@
+name: Daily Job Pipeline
+
+on:
+  schedule:
+    # Runs at 8:00 AM CT (14:00 UTC) Tuesday, Wednesday, Thursday
+    - cron: '0 14 * * 2,3,4'
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run job pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          LINKEDIN_SESSION_COOKIE: ${{ secrets.LINKEDIN_SESSION_COOKIE }}
+        run: python src/pipeline.py
+
+      - name: Upload output as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-packages-${{ github.run_number }}
+          path: output/
+          retention-days: 7
+
+      - name: Send email summary (optional)
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: "Job Pipeline Results - ${{ github.run_number }}"
+          to: bhavyamallineni@gmail.com
+          from: Job Pipeline Bot
+          body: |
+            Your daily job pipeline ran successfully.
+            Download your apply packages from GitHub Actions artifacts.
+            Run #${{ github.run_number }}

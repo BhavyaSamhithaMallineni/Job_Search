@@ -1,0 +1,11 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+rich>=13.7.0
+python-dateutil>=2.8.2
+lxml>=4.9.0
+fake-useragent>=1.4.0
+
+# Optional: only needed if Ollama is unavailable as fallback
+# anthropic>=0.25.0

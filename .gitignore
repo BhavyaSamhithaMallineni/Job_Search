@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+output/
+data/h1b_cache.json
+.DS_Store
+*.egg-info/
+dist/
+build/
+venv/
+.venv/

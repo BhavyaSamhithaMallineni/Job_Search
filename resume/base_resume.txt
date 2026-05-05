@@ -1,0 +1,57 @@
+BHAVYA SAMHITHA MALLINENI
+Austin, Texas | (949) 547-0409 | bhavyamallineni@gmail.com | LinkedIn | GitHub
+
+PROFESSIONAL SUMMARY
+Analytics Engineer with 4+ years of experience building production-grade data pipelines, analytics platforms, and ML-powered systems across consulting, media, and AI sectors. Deep expertise in dbt, Snowflake, and GCP with a track record of reducing analytics turnaround times by 20-40%, improving operational efficiency, and delivering insights that directly influence revenue and product decisions. USC Master's graduate with hands-on GenAI and MLOps experience. Authorized to work in the U.S. on STEM OPT; seeking employer sponsorship for H-1B.
+
+WORK EXPERIENCE
+
+Data Analytics Engineer | FloSports | Austin, TX | Oct 2025 - Present
+• Architected and owned dbt models on Snowflake, standardizing data marts and reducing analytics turnaround time by 20% across product and marketing teams
+• Led quarterly subscription and revenue analytics end-to-end, contributing to 12% engagement growth and shaping demand forecasting strategy
+• Built Mode dashboards backed by governed data models, enabling executive KPI tracking and cutting ad-hoc analyst requests by 40%
+• Implemented Bayesian A/B testing framework for pricing experiments, reducing experiment decision time by 25% and improving statistical rigor
+• Partnered with product and marketing teams to define metric standards, resolve data quality issues, and ensure consistent business logic across pipelines
+
+Artificial Intelligence Engineer Intern | Radical X | New York, NY | May 2024 - Aug 2024
+• Built GenAI-powered grading system using Vertex AI, LangChain, and Streamlit, achieving 89.6% accuracy in real-world production evaluations
+• Designed scalable NLP pipelines leveraging guided generation and prompt engineering; deployed on GCP with Dockerized ML services, reducing inference latency by 20%
+• Integrated ML features across 2 product release cycles in collaboration with Product and Engineering teams
+
+Data and Operations Analyst | USC Transportation | Los Angeles, CA | Sep 2024 - May 2025
+• Optimized SQL queries and Power BI dashboards with DAX and scheduled refreshes, reducing route delays by 30%
+• Defined KPIs and implemented near real-time operational metrics, improving decision speed by 25% across 30+ staff and 3 teams
+
+Analyst, Data Science and Analytics | Deloitte USI Consulting | Hyderabad, India | Sep 2021 - Jul 2023
+• Designed and deployed production ETL pipelines on GCP using SQL, enabling large-scale enterprise analytics with high reliability
+• Deployed ML-based eligibility models and MLOps pipelines, optimizing training speed and real-time inference for 1,000+ users
+• Conducted A/B testing and causal analysis across 3 business units, improving targeting and driving measurable engagement uplift
+• Integrated Flask APIs with analytics dashboards, enabling 30% faster decision-making via real-time data access
+• Developed automated data validation scripts in SQL, improving QA turnaround by 27% and reducing cross-system data inconsistencies
+• Earned 2 Deloitte Performance Awards for automation innovation and predictive analytics impact
+
+TECHNICAL SKILLS
+
+Analytics Engineering: dbt (Core and Cloud), Snowflake, BigQuery, SQL, data modeling, ELT pipelines, data marts, data quality
+Data Engineering: Apache Spark, Hadoop, Dataflow, ETL pipelines, Airflow, Databricks, data mapping, schema design
+Cloud and Infrastructure: Google Cloud Platform, AWS, Kubernetes, Docker, MLflow, CI/CD
+Machine Learning and AI: Vertex AI, LangChain, TensorFlow, PyTorch, Scikit-learn, Hugging Face, FastAPI, LightGBM, MLOps
+Visualization and BI: Mode, Power BI, DAX, Tableau, Streamlit, Plotly, Seaborn, Domo
+Languages: Python, SQL, Scala, R, C++
+Methods: A/B testing, Bayesian inference, causal analysis, time series forecasting, predictive modeling, KPI development
+Tools: JIRA, Confluence, Git, Agile, Scrum
+
+PROJECTS
+
+Real-Time Twitter Sentiment Pipeline | Nov - Dec 2024
+• Built end-to-end real-time sentiment pipeline with Logistic Regression and BERT, processing 10,000+ tweets per hour from the Twitter API
+• Deployed live Streamlit and Plotly dashboard visualizing tweet sentiment trends and keyword bursts in real time; 82% model accuracy
+
+Customer Churn Prediction Model | Sep - Oct 2024
+• Designed churn prediction pipeline using Logistic Regression and XGBoost; achieved 84% accuracy and 0.88 AUC
+• Engineered RFM features and tenure-based segmentation, reducing customer loss rates by 13% through earlier churn signal detection
+
+EDUCATION
+
+Master of Science, Electrical Engineering | University of Southern California | Los Angeles, CA | Aug 2023 - May 2025
+Bachelor of Engineering, Electronics and Communication | Osmania University | Hyderabad, India | Jul 2017 - Jul 2021

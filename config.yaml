@@ -1,0 +1,58 @@
+search:
+  titles:
+    - "Senior Analytics Engineer"
+    - "Senior Data Engineer"
+    - "Analytics Engineer"
+    - "Staff Data Engineer"
+  locations:
+    - "Austin, TX"
+    - "Remote"
+    - "United States"  # catches remote roles listed broadly
+  max_age_hours: 48
+  min_salary: 120000
+  max_results_per_title: 25
+
+h1b:
+  min_filings: 50          # minimum H-1B filings in past 3 years
+  min_approval_rate: 0.82  # minimum approval rate (82%+)
+  data_source: "h1bdata.info"
+
+screening:
+  # Any job description containing these phrases is auto-rejected
+  reject_phrases:
+    - "will not sponsor"
+    - "sponsorship not available"
+    - "no sponsorship"
+    - "us citizen only"
+    - "citizens only"
+    - "no visa"
+    - "must be authorized to work"
+    - "no opt"
+    - "no cpt"
+    - "security clearance required"
+    - "must hold active clearance"
+    - "permanent resident only"
+
+resume:
+  base_file: "resume/base_resume.txt"
+  output_format: "txt"   # txt or docx
+  preserve_sections:     # these sections are never changed
+    - "EDUCATION"
+    - "CONTACT"
+  tailor_sections:       # these get keyword-matched and rewritten
+    - "WORK EXPERIENCE"
+    - "SKILLS"
+    - "PROJECTS"
+
+linkedin:
+  search_posts: true
+  search_queries:
+    - '"{company}" hiring "{title}"'
+    - '"my team is hiring" "{company}"'
+    - '"we are hiring" "{title}" "{company}"'
+    - '"join our team" "{company}" data'
+  max_posters: 5  # max LinkedIn profiles to find per job
+
+output:
+  base_dir: "output"
+  open_browser_on_complete: true  # opens apply URL in browser
